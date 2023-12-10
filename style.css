@@ -1,0 +1,88 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.background{
+   display: flex;
+   justify-content: center;
+   background-image: url(./bg.jpg);
+   background-size:100 ;
+   background-position: center;
+   height: 100vh;
+   
+}
+
+.background::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the color and opacity as needed */
+    z-index: 1; /* Ensure the overlay is on top of the background image */
+}
+
+h2{
+    font-size: 30px;
+    font-weight: 700;
+    padding-bottom: 30px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    margin: 110px auto;
+    background-color: white;
+    height: 70vh;
+    z-index: 2;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    width: 45%;
+    
+}
+
+.left{
+   background-image: url(./hand.jpg); 
+   width: 50%;
+   background-size: cover;
+   background-position: center;
+}
+
+img{
+    width: 400px;
+    height: auto;
+
+}
+
+.right{
+    padding: 30px;
+    text-align: left;
+    width: 50%;
+    
+}
+
+input{
+    width: 100%;
+    padding: 12px 12px 12px 12px;
+    font-size: 16px;
+    margin: 3px;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+
+button{
+    width: 100%;
+    padding: 18px 12px;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(211, 150, 27);
+}
+
+
+
+
